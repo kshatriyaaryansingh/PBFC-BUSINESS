@@ -55,3 +55,37 @@ footer p {
     box-sizing: border-box !important;
   }
 }
+@media (max-width: 800px) {
+
+  .marketplace-box {
+    display: block !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+
+  .marketplace-box > #marketplaces {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  .marketplace-box #marketplaces > .marketplaces {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 15px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .marketplace-box .market {
+    width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .marketplace-box .market img {
+    max-width: 60px !important;
+    height: 60px !important;
+    object-fit: contain !important;
+  }
+}

@@ -540,13 +540,29 @@ footer a{
         grid-template-columns: 1fr;
     }
 }
-.marketplace-box > #marketplaces > .marketplaces {
-    display: flex !important;
-    flex-direction: row !important;
-    justify-content: center !important;
-    align-items: stretch !important;
-    gap: 15px !important;
-    flex-wrap: nowrap !important;
+@media (max-width: 800px) {
+    .marketplace-box {
+        display: block !important;
+    }
+
+    .marketplace-box > h2 {
+        width: 100% !important;
+        text-align: center !important;
+        margin-bottom: 25px !important;
+    }
+
+    .marketplace-box > .marketplaces {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        width: 100% !important;
+        gap: 15px !important;
+    }
+
+    .marketplace-box > .marketplaces .market {
+        width: 100% !important;
+        flex: none !important;
+        box-sizing: border-box !important;
+    }
 }
 
 .marketplace-box > #marketplaces > .marketplaces .market {

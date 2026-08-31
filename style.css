@@ -175,4 +175,14 @@ footer p {
     height: 250px !important;
     object-fit: contain !important;
     display: block !important;
+}.products-container .product-card .product-image {
+    height: 250px !important;
+    overflow: hidden !important;
+}
+
+.products-container .product-card .product-image img {
+    width: 100% !important;
+    height: 250px !important;
+    object-fit: contain !important;
+    display: block !important;
 }

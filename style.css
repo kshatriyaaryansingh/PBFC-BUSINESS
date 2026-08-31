@@ -38,3 +38,20 @@ footer p {
     display: block !important;
     margin: 0 auto 15px !important;
 }
+@media (max-width: 800px) {
+  .marketplace-box {
+    overflow-x: hidden !important;
+  }
+
+  .marketplaces {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 15px !important;
+  }
+
+  .market {
+    width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+  }
+}

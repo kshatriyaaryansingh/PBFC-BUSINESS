@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PBFC Business | Quality • Trust • Value</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f7f7f7;
+    color:#101827;
+}
+
+/* HEADER */
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:#071426;
+    padding:15px 6%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 3px 15px rgba(0,0,0,.25);
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    color:white;
+}
+
+.logo-circle{
+    width:48px;
+    height:48px;
+    border:2px solid #d9a52e;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:19px;
+    font-weight:bold;
+    color:#d9a52e;
+}
+
+.logo-text{
+    font-size:22px;
+    font-weight:bold;
+}
+.logo-image {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+.logo-text span{
+    color:#d9a52e;
+}
+
+.logo small{
+    display:block;
+    color:#ddd;
+    font-size:8px;
+    letter-spacing:2px;
+    margin-top:3px;
+}
+
+nav{
+    display:flex;
+    align-items:center;
+    gap:25px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-size:14px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#d9a52e;
+}
+
+.shop-btn{
+    background:#d9a52e;
+    color:#071426 !important;
+    padding:12px 20px;
+    border-radius:6px;
+}
+
+/* HERO */
+.hero{
+    min-height:620px;
+    background:linear-gradient(120deg,#071426,#142943);
+    color:white;
+    display:flex;
+    align-items:center;
+    padding:70px 7%;
+}
+
+.hero-content{
+    max-width:650px;
+}
+
+.welcome{
+    color:#d9a52e;
+    font-weight:bold;
+    letter-spacing:3px;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:65px;
+    line-height:1.05;
+    margin-bottom:20px;
+}
+
+.hero h1 span{
+    color:#d9a52e;
+}
+
+.hero h2{
+    font-size:25px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    color:#d5d9df;
+    font-size:17px;
+    line-height:1.7;
+}
+
+.buttons{
+    margin-top:30px;
+}
+
+.btn{
+    display:inline-block;
+    text-decoration:none;
+    padding:14px 25px;
+    margin-right:10px;
+    border-radius:6px;
+    font-weight:bold;
+}
+
+.btn-gold{
+    background:#d9a52e;
+    color:#071426;
+}
+
+.btn-outline{
+    border:1px solid #d9a52e;
+    color:white;
+}
+
+/* FEATURES */
+.features{
+    background:white;
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    padding:30px 6%;
+    flex-wrap:wrap;
+}
+
+.feature{
+    width:220px;
+    text-align:center;
+}
+
+.feature-icon{
+    font-size:32px;
+    margin-bottom:10px;
+}
+
+.feature h3{
+    font-size:15px;
+    margin-bottom:7px;
+}
+
+.feature p{
+    color:#666;
+    font-size:13px;
+}
+
+/* SECTIONS */
+section{
+    padding:80px 7%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:45px;
+}
+
+.section-title .gold{
+    color:#d09a20;
+    font-size:14px;
+    font-weight:bold;
+    letter-spacing:2px;
+}
+
+.section-title h2{
+    font-size:38px;
+    margin-top:8px;
+}
+
+.section-title p{
+    color:#666;
+    margin-top:12px;
+}
+
+/* PRODUCTS */
+.products{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:22px;
+}
+
+.product{
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.product:hover{
+    transform:translateY(-7px);
+}
+
+.product-image{
+    height:180px;
+    background:linear-gradient(135deg,#dfe4ea,#ffffff);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:65px;
+}
+
+.product-info{
+    padding:22px;
+}
+
+.product-info h3{
+    margin-bottom:10px;
+}
+
+.product-info p{
+    color:#666;
+    font-size:14px;
+    line-height:1.5;
+}
+
+.view-btn{
+    display:inline-block;
+    margin-top:15px;
+    color:#b27c00;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+/* MARKETPLACES */
+.marketplaces{
+    background:#eef0f3;
+}
+
+.marketplace-box {
+    background: white;
+    padding: 20px;
+    border-radius: 14px;
+
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center;
+    align-items: stretch;
+    gap: 15px;
+
+    flex-wrap: nowrap !important;
+}
+
+.market {
+    width: 180px !important;
+    min-width: 0 !important;
+    padding: 12px !important;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1 1 0 !important;
+}
+.market img {
+    width: 60px !important;
+    height: 60px !important;
+    object-fit: contain;
+}
+
+.market h3{
+    font-size:24px;
+    margin-bottom:12px;
+}
+
+.market a{
+    display:inline-block;
+    padding:10px 18px;
+    background:#071426;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+    font-size:13px;
+}
+
+/* WHY PBFC */
+.why{
+    background:#071426;
+    color:white;
+}
+
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.why-card{
+    text-align:center;
+    padding:25px;
+}
+
+.why-card .icon{
+    font-size:35px;
+    margin-bottom:15px;
+}
+
+.why-card h3{
+    color:#d9a52e;
+    margin-bottom:10px;
+}
+
+.why-card p{
+    color:#c8ced7;
+    font-size:14px;
+    line-height:1.6;
+}
+
+/* MISSION */
+.mission{
+    text-align:center;
+    background:white;
+}
+
+.mission-text{
+    max-width:800px;
+    margin:auto;
+    color:#555;
+    font-size:18px;
+    line-height:1.8;
+}
+
+/* CONTACT */
+.contact{
+    background:#f1f2f4;
+}
+
+.contact-box{
+    max-width:700px;
+    margin:auto;
+    background:white;
+    padding:35px;
+    border-radius:12px;
+    text-align:center;
+}
+
+.contact-box p{
+    margin:12px;
+    color:#555;
+}
+
+/* FOOTER */
+footer{
+    background:#050d19;
+    color:white;
+    padding:45px 7% 20px;
+}
+
+.footer-main{
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+    gap:40px;
+    margin-bottom:30px;
+}
+
+.footer-logo{
+    font-size:25px;
+    font-weight:bold;
+}
+
+.footer-logo span{
+    color:#d9a52e;
+}
+
+footer h3{
+    margin-bottom:15px;
+    color:#d9a52e;
+}
+
+footer a{
+    display:block;
+    color:#ccc;
+    text-decoration:none;
+    margin:8px 0;
+    font-size:14px;
+}
+
+.copyright{
+    border-top:1px solid #263247;
+    padding-top:18px;
+    text-align:center;
+    color:#aaa;
+    font-size:13px;
+}
+
+/* MOBILE */
+@media(max-width:900px){
+
+    .products{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .why-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    nav{
+        gap:12px;
+    }
+}
+
+@media(max-width:650px){
+
+    header{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero{
+        text-align:center;
+        padding:60px 20px;
+    }
+
+    .hero h1{
+        font-size:43px;
+    }
+
+    .hero h2{
+        font-size:20px;
+    }
+
+    .products{
+        grid-template-columns:1fr;
+    }
+
+    .why-grid{
+        grid-template-columns:1fr;
+    }
+
+    .footer-main{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+}
+.logo img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.product-card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    text-align: left;
+}
+
+.product-image {
+    height: 220px;
+    background: #e5e7eb;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+}
+
+.product-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    color: #6b7280;
+    margin-bottom: 18px;
+}
+
+.product-card button {
+    background: #111827;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    .products-container {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+
+    <div class="logo">
+
+<img src="logo.png" alt="PBFC Business Logo">
+<div class="logo-image">
+    PBFC <span>BUSINESS</span>
+    <small>QUALITY • TRUST • VALUE</small>
+</div>
+
+    </div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#products">Products</a>
+        <a href="#why">Why PBFC?</a>
+        <a href="#mission">Mission</a>
+        <a href="#contact">Contact Us</a>
+        <a class="shop-btn" href="#products">Shop Now 🛒</a>
+    </nav>
+
+</header>
+
+
+<!-- HERO -->
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <div class="welcome">WELCOME TO</div>
+
+        <h1>
+            PBFC <span>BUSINESS</span>
+        </h1>
+
+        <h2>
+            Building Trust. Creating Value.
+        </h2>
+
+        <p>
+            PBFC Business is committed to providing
+            high-quality products, reliable service,
+            and a better experience for our customers.
+        </p>
+
+        <div class="buttons">
+            <a href="#products" class="btn btn-gold">
+                Explore Products
+            </a>
+
+            <a href="#about" class="btn btn-outline">
+                About PBFC
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FEATURES -->
+<div class="features">
+
+    <div class="feature">
+        <div class="feature-icon">🛡️</div>
+        <h3>QUALITY ASSURED</h3>
+        <p>Products you can trust.</p>
+    </div>
+
+    <div class="feature">
+        <div class="feature-icon">🤝</div>
+        <h3>TRUSTED SERVICE</h3>
+        <p>Customer satisfaction first.</p>
+    </div>
+
+    <div class="feature">
+        <div class="feature-icon">🏆</div>
+        <h3>BEST VALUE</h3>
+        <p>Quality at fair prices.</p>
+    </div>
+
+    <div class="feature">
+        <div class="feature-icon">🎧</div>
+        <h3>CUSTOMER SUPPORT</h3>
+        <p>We are here to help.</p>
+    </div>
+
+</div>
+
+
+<!-- ABOUT -->
+<section id="about">
+
+    <div class="section-title">
+        <div class="gold">ABOUT US</div>
+        <h2>About PBFC Business</h2>
+    </div>
+
+    <p class="mission-text">
+        PBFC Business is a growing brand focused on quality,
+        reliability and customer satisfaction. Our goal is to
+        build a trusted name by providing products that deliver
+        real value to our customers.
+    </p>
+
+</section>
+
+
+<!-- PRODUCTS -->
+ <section id="mission">
+    <h2>Our Mission</h2>
+
+    <p>
+        Our mission is to provide quality products, build customer trust,
+        and create a reliable brand that grows with our customers.
+    </p>
+</section>
+<section id="products"> <h2>Our Products</h2>
+
+<div class="products-container">
+
+    <!-- Product 1 -->
+    <div class="product-card">
+        <div class="product-image">Product Image</div>
+        <h3>Product Name 1</h3>
+        <p>High quality product from PBFC Business.</p>
+        <h4>₹999</h4>
+        <button>View Product</button>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product-card">
+        <div class="product-image">Product Image</div>
+        <h3>Product Name 2</h3>
+        <p>Quality product with reliable service.</p>
+        <h4>₹1,999</h4>
+        <button>View Product</button>
+    </div>
+
+    <!-- Product 3 - BED -->
+    <div class="product-card">
+        <img src="images/product1.jpeg"
+             alt="PBFC Premium Bed"
+             class="product-image">
+
+        <h3>PBFC Premium Bed</h3>
+        <p>High quality bed from PBFC Business.</p>
+        <h4>₹30,000</h4>
+
+        <a href="bed.html" class="product-button">
+            View Product
+        </a>
+    </div>
+
+</div>
+
+    <!-- Product 1 -->
+    <div class="product-card">
+        <div class="product-image">Product Image</div>
+        <h3>Product Name 1</h3>
+        <p>High quality product from PBFC Business.</p>
+        <h4>₹999</h4>
+        <a href="#" class="product-button">View Product</a>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product-card">
+        <div class="product-image">Product Image</div>
+        <h3>Product Name 2</h3>
+        <p>Quality product with reliable service.</p>
+        <h4>₹1999</h4>
+        <a href="bed.html" class="product-button">View Product</a>
+    </div>
+
+    <!-- Bed Product -->
+    <div class="product-card">
+        <img src="images/product1.jpeg" alt="PBFC Premium Bed" class="product-image">
+        <h3>PBFC Premium Bed</h3>
+        <p>High quality bed from PBFC Business.</p>
+        <h4>₹30,000</h4>
+        <button>View Product</button>
+    </div>
+
+</div>
+    <div class="section-title">
+        <div class="gold">OUR PRODUCTS</div>
+        <h2>Quality Products for Every Need</h2>
+        <p>Our product collection will grow with PBFC Business.</p>
+    </div>
+
+    <div class="products">
+
+        <div class="product">
+            <div class="product-image">🗄️</div>
+            <div class="product-info">
+                <h3>Iron Bed Box</h3>
+                <p>Strong and spacious storage with a premium design.</p>
+                <a href="#" class="view-btn">View Details →</a>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="product-image">📦</div>
+            <div class="product-info">
+                <h3>Storage Box</h3>
+                <p>Smart storage solutions for organized spaces.</p>
+                <a href="#" class="view-btn">View Details →</a>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="product-image">🏠</div>
+            <div class="product-info">
+                <h3>Home & Utility</h3>
+                <p>Practical products designed for everyday use.</p>
+                <a href="#" class="view-btn">View Details →</a>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="product-image">💼</div>
+            <div class="product-info">
+                <h3>Office Products</h3>
+                <p>Useful products for a better workspace.</p>
+                <a href="#" class="view-btn">View Details →</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<section id="contact">
+    <div class="section-title">
+        <h2>Contact Us</h2>
+    </div>
+
+    <p>Have a question or want to place an order?</p>
+
+    <p><strong>PBFC Business</strong></p>
+
+    <p>📞 Phone: +91 6386264625
+    <p>📧 Email: pbfcseller@email.com</p>
+
+    <a href="https://wa.me/916386264625" class="product-button" target="_blank">
+        Contact on WhatsApp
+    </a>
+</section>
+<footer>
+    <h3>PBFC BUSINESS</h3>
+    <p>Quality • Trust • Value</p>
+    <p>© 2026 PBFC Business. All Rights Reserved.</p>
+</footer>
+
+
+<!-- MARKETPLACES -->
+<section class="marketplaces">
+
+    <div class="section-title">
+        <div class="gold">AVAILABLE ON</div>
+        <h2>Shop PBFC Business</h2>
+    </div>
+
+    <div class="marketplace-box">
+
+        <!-- MARKETPLACES -->
+<section id="marketplaces">
+
+    <h2>Shop With PBFC Business</h2>
+
+    <div class="marketplaces">
+
+        <!-- Amazon -->
+        <div class="market">
+            <img src="images/amazon.jpg" alt="Amazon">
+            <h3>Amazon</h3>
+            <a href="#" target="_blank">Shop on Amazon</a>
+        </div>
+
+        <!-- Flipkart -->
+        <div class="market">
+            <img src="images/flipkart.jpg" alt="Flipkart">
+            <h3>Flipkart</h3>
+            <a href="#" target="_blank">Shop on Flipkart</a>
+        </div>
+
+        <!-- Meesho -->
+        <div class="market">
+            <img src="images/meesho.jpg" alt="Meesho">
+            <h3>Meesho</h3>
+            <a href="#" target="_blank">Shop on Meesho</a>
+        </div>
+
+    </div>
+
+</section>
+
+    </div>
+
+</section>
+
+
+<!-- WHY PBFC -->
+<section class="why" id="why">
+
+    <div class="section-title">
+        <div class="gold">WHY CHOOSE US?</div>
+        <h2>Why Choose PBFC Business?</h2>
+    </div>
+
+    <div class="why-grid">
+
+        <div class="why-card">
+            <div class="icon">🛡️</div>
+            <h3>Reliable Quality</h3>
+            <p>We focus on quality and durability.</p>
+        </div>
+
+        <div class="why-card">
+            <div class="icon">👥</div>
+            <h3>Customer First</h3>
+            <p>Your satisfaction is important to us.</p>
+        </div>
+
+        <div class="why-card">
+            <div class="icon">🏷️</div>
+            <h3>Fair Prices</h3>
+            <p>Quality products at competitive prices.</p>
+        </div>
+
+        <div class="why-card">
+            <div class="icon">📦</div>
+            <h3>Safe Delivery</h3>
+            <p>Careful packaging and reliable delivery.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- MISSION -->
+<section class="mission" id="mission">
+
+    <div class="section-title">
+        <div class="gold">OUR MISSION</div>
+        <h2>Building a Brand You Can Trust</h2>
+    </div>
+
+    <p class="mission-text">
+        Our mission is to build a trusted brand by providing
+        quality products, excellent customer experience and
+        long-term value. We believe in Quality, Trust and Value.
+    </p>
+
+</section>
+
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+
+    <div class="section-title">
+        <div class="gold">CONTACT US</div>
+        <h2>Let's Connect</h2>
+    </div>
+
+    <div class="contact-box">
+
+        <p>🏢 <strong>PBFC Business</strong></p>
+
+        <p>📧 Email: <strong>Add your email later</strong></p>
+
+        <p>📱 Phone: <strong>Add your number later</strong></p>
+
+        <p>📍 India</p>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+    <div class="footer-main">
+
+        <div>
+            <div class="footer-logo">
+                PBFC <span>BUSINESS</span>
+            </div>
+
+            <p style="margin-top:10px;color:#aaa;">
+                QUALITY • TRUST • VALUE
+            </p>
+        </div>
+
+        <div>
+            <h3>Quick Links</h3>
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#products">Products</a>
+            <a href="#mission">Mission</a>
+        </div>
+
+        <div>
+            <h3>Follow Us</h3>
+           <div class="social-links">
+    <a href="https://www.instagram.com/pbfcbusiness/" target="_blank">
+        Instagram
+    </a>
+
+    <a href="https://www.facebook.com/pbfcbusiness/" target="_blank">
+        Facebook
+    </a>
+
+    <a href="https://www.youtube.com/@pbfcbusiness" target="_blank">
+        YouTube
+    </a>
+</div>
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        © 2026 PBFC Business. All Rights Reserved.
+    </div>
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PBFC Premium Bed | PBFC Business</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f7fa;
+            color: #111827;
+        }
+
+        header {
+            background: #111827;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        .back {
+            color: white;
+            text-decoration: none;
+        }
+
+        .product-page {
+            max-width: 1100px;
+            margin: 60px auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            background: white;
+            border-radius: 20px;
+        }
+
+        .product-page img {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        .details {
+            padding: 20px;
+        }
+
+        .details h1 {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        .price {
+            font-size: 30px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        .description {
+            color: #4b5563;
+            line-height: 1.7;
+            margin-bottom: 25px;
+        }
+
+        .buy-button {
+            display: inline-block;
+            background: #111827;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .specifications {
+            margin-top: 30px;
+        }
+
+        .specifications h2 {
+            margin-bottom: 15px;
+        }
+
+        .specifications p {
+            margin: 8px 0;
+        }
+
+        @media (max-width: 800px) {
+            .product-page {
+                grid-template-columns: 1fr;
+                margin: 20px;
+            }
+
+            .product-page img {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">PBFC Business</div>
+        <a href="index.html" class="back">← Back to Products</a>
+    </header>
+
+    <main class="product-page">
+
+        <div>
+            <img src="images/product1.jpeg" alt="PBFC Premium Bed">
+        </div>
+
+        <div class="details">
+
+            <h1>PBFC Premium Bed</h1>
+
+            <div class="price">₹30,000</div>
+
+            <p class="description">
+                A premium quality bed designed for durability, comfort
+                and long-lasting use. Crafted with quality materials
+                and made with attention to detail.
+            </p>
+
+            <a href="https://wa.me/916386264625?text=I%20want%20to%20buy%20the%20PBFC%20Premium%20Bed" 
+   class="buy-button" 
+   target="_blank">
+   Buy Now
+</a>
+
+            <div class="specifications">
+                <h2>Specifications</h2>
+
+                <p><strong>Brand:</strong> PBFC Business</p>
+                <p><strong>Product:</strong> Premium Bed</p>
+                <p><strong>Price:</strong> ₹30,000</p>
+                <p><strong>Quality:</strong> Premium</p>
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+</html>
